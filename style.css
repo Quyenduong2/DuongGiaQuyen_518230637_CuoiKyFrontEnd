@@ -87,7 +87,7 @@ body {
 
 .col-lg-8 {
   display: flex;
-  justify-content: center;
+  /* justify-content: center; */
 }
 
 /* --banner ---  */
@@ -673,13 +673,13 @@ swiper-slide img {
   .room_person {
     & .card-side {
       & img {
-        width: 150% !important;
+        width: 100% !important;
       }
     }
   }
 }
 
-@media (min-width: 768px) and (max-width: 1800px) {
+@media (min-width: 991.98px) and (max-width: 1800px) {
   .gate-sv-itc .row {
     & .col-lg-8 {
       justify-content: normal !important;
@@ -1466,6 +1466,7 @@ table {
   & .card-text {
     font-weight: 400;
     margin-bottom: 8px;
+    font-size: 1.3rem;
   }
 
   & .item-info {
@@ -1473,6 +1474,10 @@ table {
     top: 50%;
     left: 40%;
     transform: translate(-50%, -50%);
+  }
+
+  & img{
+    width: 70%;
   }
 }
 

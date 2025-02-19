@@ -605,6 +605,10 @@ swiper-slide img {
       font-size: 1.5rem;
     }
   }
+
+  .col-lg-8{
+    justify-content: center;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 991.98px) {
@@ -1333,16 +1337,25 @@ table {
   }
 }
 
-.offcanvas-header {
+.offcanvas-header{
+  background-color: var(--main-color-);
+  & .btn-close{
+    background-color: var(--color-text);
+  }
+}
+
+.btn-close{
+  color: var(--color-text);
 }
 
 .offcanvas-title {
   font-weight: 600;
   font-size: 2rem;
-  -webkit-text-fill-color: transparent;
+  color: var(--color-text);
+  /* -webkit-text-fill-color: transparent;
   -webkit-background-clip: text !important;
   background: -webkit-linear-gradient(200deg, #ec1d25, #0d296b);
-  background: linear-gradient(250deg, #ec1d25, #0d296b);
+  background: linear-gradient(250deg, #ec1d25, #0d296b); */
 }
 
 .offcanvas-body {
@@ -1350,7 +1363,7 @@ table {
   & .navbar-nav {
     width: 100%;
     & li:hover {
-      background-color: #091e4b;
+      background-color: var(--main-color-);
       margin: 5px 0;
       & .dropdown-toggle::after {
         color: var(--color-text);
@@ -1489,3 +1502,28 @@ table {
   color: var(--color-text);
 }
 /* khoatrungtam.html  */
+
+
+/* css button angel top  */
+
+.btn-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: var(--main-color-);
+  color: var(--color-text);
+  border: none;
+  border-radius: 50%;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.btn-top:hover{
+  color: var(--color-text);
+  background-color: #0a2b5e;
+}
+
+.btn-top:focus{
+  color: var(--color-text);
+}
